@@ -1,0 +1,15 @@
+.TimeNum {
+    position: relative;
+    left: 200px;
+    bottom: 55px;
+}
+.AdapterNum {
+    position: relative;
+    left: 450px;
+    bottom: 110px;
+}
+#SubmitBut {
+    position: relative;
+    left: 675px;
+    bottom: 150px;
+}
