@@ -1,98 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
 :root {
-    --cream: hsl(33, 62%, 90%);
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 50%);
-    --green: hsl(147, 55%, 30%);
+    --siteGradient: linear-gradient(#000080, #0000FF, #00FFFF);
+    --friendCubeGradient: linear-gradient(to bottom right, #006400, #008000, #228b22);
+    --girlfriendCubeGradient: linear-gradient(to bottom left, #006400, #008000, #228b22);
 }
 
-body { 
-    background-color: var(--cream);
+.friendCubes {
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
-.tw { 
-    border: none;
-    border-radius: 10px;
-    width: 800px;
-    height: 600px;
-    margin-left: 550px;
-    margin-top: 200px;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: row;
+.girlfriendCubes {
+    font-family: 'Courier New', Courier, monospace
 }
 
-#toiletwater { 
-    height: 600px;
-    width: 400px;
-    border: none;
-    border-radius: 10px 0 0 10px;
+#brnarr {
+    position: relative;
+    text-align: center;
+    left: 450px;
+    top: 200px;
+    transform: rotate(30deg);
+    width: 100px;
+    height: 50px;
 }
 
-#txtpart {
-    margin-bottom: 100px;
-    margin-left: 30px;
-}
-#head {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--grey);
-    font-size: 20px;
-    margin-bottom: 10px;
-    margin-top: 40px;
+#brnarr2 {
+    position: relative;
+    text-align: center;
+    left: 600px;
+    top: 350px;
+    transform: rotate(345deg);
+    width: 100px;
+    height: 50px;
 }
 
-#info {
-    font-family: 'Fraunces', serif;
-    font-size: 50px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+#brnarr3 {
+    position: relative;
+    text-align: center;
+    left: 700px;
+    top: 100px;
+    transform: rotate(345deg);
+    width: 100px;
+    height: 50px;
+}
+
+#brnarr4 {
+    position: relative;
+    text-align: center;
+    left: 975px;
+    top: 100px;
+    transform: rotate(345deg);
+    width: 100px;
+    height: 50px;
+}
+
+#brnarr5 {
+    position: relative;
+    text-align: center;
+    left: 1000px;
+    top: 290px;
+    transform: rotate(115deg);
+    width: 100px;
+    height: 50px;
+}
+#brnarr6 {
+    position: relative;
+    text-align: center;
+    top: 525px;
+    left: 600px;
+    transform: rotate(140deg);
+    width: 100px;
+    height: 50px;
 }
 
 #body {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--grey);
-    word-spacing: 2.5px;
-    line-height: 25px;
-    max-width: 275px;
-    font-size: 20px;
+    background-color: var(--siteGradient);
 }
 
-#newprice {
-    color: var(--green);
-    font-family: 'Fraunces', serif;
-    font-size: 40px;
-    margin-bottom: 30px;
-    margin-right: 20px;
-    margin-top: 0px;
-} 
-
-#oldprice {
-    text-decoration: line-through;
-    color: var(--grey);
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 0px;
-    max-height: 20px;
-}
-
-button {
-    border: 1px solid;
+#friendText-cube1 {
+    left: 250px;
+    width: 200px;
+    bottom: 60px; 
+    height: 125px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
     border-radius: 10px;
-    height: 50px;
-    width: 325px;
-    font-size: 15px;
-    margin-left: 0px;
-    color: var(--white);
-    font-family:  'Montserrat', sans-serif;
-    background-color: var(--green);
+    background: var(--friendCubeGradient);
+
 }
 
-#prices {
-    display: flex;
-    flex-direction: row;
+#friendText-cube2 {
+    top: 10px;
+    left: 450px;
+    width: 200px;
+    height: 140px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--friendCubeGradient);
 }
 
-svg {
-    color: var(--green);
+#friendText-cube3 {
+    left: 830px;
+    width: 200px;
+    bottom: 220px;
+    height: 160px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--friendCubeGradient);
+}
+
+#girlfriendText-cube1 {
+    left: 650px;
+    width: 200px;
+    bottom: 700px;
+    height: 70px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--girlfriendCubeGradient);
+}
+
+#girlfriendText-cube2 {
+    left: 1025px;
+    width: 200px;
+    bottom: 875px;
+    height: 210px;
+    padding: 15px; 
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center; 
+    border-radius: 10px;
+    background: var(--girlfriendCubeGradient);
+}
+
+#girlfriendText-cube3 {
+    left: 1410px;
+    width: 200px;
+    bottom: 1150px;
+    height: 180px; 
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--girlfriendCubeGradient);
+}
+
+#girlfriendText-cube4 {
+    left: 1250px;
+    width: 200px;
+    bottom: 1060px;
+    height: 210px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--girlfriendCubeGradient);
+}
+
+#girlfriendText-cube5 {
+    left: 850px;
+    width: 200px;
+    bottom: 1200px;
+    height: 250px;
+    padding: 15px;
+    color: white;
+    border: 2px solid;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--girlfriendCubeGradient);
 }
