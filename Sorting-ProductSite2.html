@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Excel Transform Site</title>
+      <link rel="stylesheet" href="Style-ProductSite2.css">
+   </head>
+   <body>
+      <form id="input-form">
+         <object data='Katek-Logosvg.svg' id='katek-logo' width='300' height='200'></object>
+         <h1 id='description'>This website was made for filtering information in excel files. With sorting and checking funtions. <span>Was made by Katek GmbH</span></h1>
+         <section id="input-section">
+            <div class="file-input-section">
+               <label id="fc" for="file-choose">Datei wählen</label>
+               <input type="file" id="file-choose" accept=".csv"><br>
+               <p id="chosen-file"></p>
+            </div>
+
+         </section><br>
+         <div>
+            <label id='row-limiter-label'>Zeilenlimit:</label>
+            <input type="number" id="row-limiter" placeholder="50000" value="10" min="0" max="50000">
+         </div>
+
+         <section class="filters">
+            <div class="label-input">
+               <label for="ProdCode">ProdCode</label>
+               <input type="text" id="ProdCode">
+            </div>
+            
+            <div class="label-input">
+               <label for="Customer">Customer</label>
+               <input type="text" id="Customer">
+            </div>
+            
+            <div class="label-input">
+               <label for="ProdName">ProdName</label>
+               <input type="text" id="ProdName">
+            </div>
+            
+            <div class="label-input">
+               <label for="ArticleNum">ArticleNum</label>
+               <input type="text" id="ArticleNum">
+            </div>
+
+            <div class="label-input">
+               <label for="MatNum">MatNum</label>
+               <input type="text" id="MatNum">
+            </div>
+            
+            <div class="label-input">
+               <label for="HostName">HostName</label>
+               <input type="text" id="HostName">
+            </div>
+            
+            <div class="label-input">
+               <label for="WkStNmae">WkStName</label>
+               <input type="text" id="WkStNmae">
+            </div>
+            
+            <div class="label-input">
+               <label for="AdpNum">AdpNum</label>
+               <input type="text" id="AdpNum">
+            </div>
+            
+            <div class="label-input">
+               <label for="ProcName">ProcName</label>
+               <input type="text" id="ProcName">
+            </div>
+            
+            <div class="label-input">
+               <label for="AVO">AVO</label>
+               <input type="text" id="AVO">
+            </div>
+         </section><br>
+
+         <div class="submit-section">
+            <input type="submit" value="Einreichen" class="submit-button">
+            <input type="submit" value="Anfangstabelle" class="reload-table">
+         </div>
+      </form><br>
+
+      <table id="data-table"></table>
+      <p id="empty-message"></p>
+
+      <script type="module" src="Function-ProductSite2.js"></script>
+   </body>
+</html>         
